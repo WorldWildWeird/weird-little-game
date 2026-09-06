@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Obstacle Jump</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <title>Choose a game</title>
+    <link rel="stylesheet" href="/src/hub.css" />
   </head>
   <body>
-    <div id="select">
-      <h1>Choose a character</h1>
-      <div id="chars"></div>
-    </div>
-    <div id="play" hidden>
-      <canvas id="game" width="1280" height="720"></canvas>
-      <p id="hint">← → / Q D = move · Space = jump · B = long jump</p>
-    </div>
-    <script type="module" src="/src/main.js"></script>
+    <main id="hub">
+      <h1>Choose a game</h1>
+      <div id="games">
+        <a class="game" href="/market.html">
+          <span class="game-art market"></span>
+          <span class="game-name">How Many Market Cap</span>
+        </a>
+        <a class="game" href="/jumper.html">
+          <span class="game-art jumper"></span>
+          <span class="game-name">Obstacle Jump</span>
+        </a>
+      </div>
+    </main>
   </body>
 </html>

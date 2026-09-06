@@ -601,7 +601,10 @@ window.addEventListener("keydown", (e) => {
     if (e.repeat) return;
     if (!dead) requestLongJump();
   }
-  if (e.code === "Escape") backToSelect();
+  if (e.code === "Escape") {
+    if (running) backToSelect();
+    else window.location.href = "/";
+  }
 });
 
 window.addEventListener("keyup", (e) => {
